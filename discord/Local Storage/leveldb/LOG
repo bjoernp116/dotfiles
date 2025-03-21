@@ -1,0 +1,17 @@
+2025/03/18-20:17:09.460 1801 Reusing MANIFEST /home/pollen/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2025/03/18-20:17:09.464 1801 Recovering log #87
+2025/03/18-20:17:09.464 1801 Reusing old log /home/pollen/.config/discord/Local Storage/leveldb/000087.log 
+2025/03/18-20:30:10.091 17dd Level-0 table #91: started
+2025/03/18-20:30:10.094 17dd Level-0 table #91: 47538 bytes OK
+2025/03/18-20:30:10.096 17dd Delete type=0 #87
+2025/03/18-20:30:10.096 17dd Compacting 4@0 + 2@1 files
+2025/03/18-20:30:10.111 17dd Generated table #92@0: 17 keys, 2499658 bytes
+2025/03/18-20:30:10.151 17dd Generated table #93@0: 96 keys, 3475024 bytes
+2025/03/18-20:30:10.151 17dd Compacted 4@0 + 2@1 files => 5974682 bytes
+2025/03/18-20:30:10.154 17dd compacted to: files[ 0 3 0 0 0 0 0 ]
+2025/03/18-20:30:10.154 17dd Delete type=2 #81
+2025/03/18-20:30:10.155 17dd Delete type=2 #83
+2025/03/18-20:30:10.155 17dd Delete type=2 #91
+2025/03/18-20:30:10.155 17dd Delete type=2 #85
+2025/03/18-20:30:10.155 17dd Delete type=2 #88
+2025/03/18-20:30:10.155 17dd Delete type=2 #80
