@@ -1,0 +1,9 @@
+
+2025/04/23 (17:00:15) | ===> btop++ v.1.4.0
+2025/04/23 (17:00:15) | INFO: Logger set to DEBUG
+2025/04/23 (17:00:17) | INFO: Logger set to DEBUG
+2025/04/23 (17:00:17) | INFO: Logger set to INFO
+
+2025/04/23 (21:46:53) | ===> btop++ v.1.4.0
+2025/04/23 (21:46:53) | ERROR: Stall in Runner thread, restarting!
+2025/04/23 (21:47:24) | ERROR: Stall in Runner thread, restarting!

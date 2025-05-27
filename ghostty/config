@@ -1,0 +1,14 @@
+# By default Reload config with shft + cmd + , 
+window-decoration = none
+
+# config-file = themes/rosepine
+# background = #000000
+background-opacity = 0.95
+background-blur-radius = 20
+
+theme = catppuccin-mocha
+# ==>
+# font-family = "MesloLGS Nerd Font"
+font-size = 30
+# 
+keybind = ctrl+shift+r=reload_config
