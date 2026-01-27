@@ -21,6 +21,8 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
 
+vim.keymap.set("n", "<leader>ff", "<cmd>!cargo fmt<CR>", { silent = true })
+
 -- the how it be paste
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
@@ -83,8 +85,8 @@ vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>", { desc = "Close current spli
 
 -- Copy filepath to the clipboard
 vim.keymap.set("n", "<leader>fp", function()
-    local filePath = vim.fn.expand("%:~")              -- Gets the file path relative to the home directory
-    vim.fn.setreg("+", filePath)                       -- Copy the file path to the clipboard register
+    local filePath = vim.fn.expand("%:~")                -- Gets the file path relative to the home directory
+    vim.fn.setreg("+", filePath)                         -- Copy the file path to the clipboard register
     print("File path copied to clipboard: " .. filePath) -- Optional: print message to confirm
 end, { desc = "Copy file path to clipboard" })
 
@@ -97,3 +99,37 @@ vim.keymap.set("n", "<leader>lx", function()
         underline = isLspDiagnosticsVisible
     })
 end, { desc = "Toggle LSP diagnostics" })
+
+
+vim.keymap.set("n", "<leader>ch", function()
+    local current_file = vim.api.nvim_buf_get_name(0)
+    local filetype = vim.fn.fnamemodify(current_file, ":e") -- get extension
+    local basename = vim.fn.fnamemodify(current_file, ":r") -- strip extension
+
+    local alt_file
+    if filetype == "h" or filetype == "hpp" then
+        alt_file = basename .. ".cpp"
+    elseif filetype == "cpp" then
+        -- Try .h first, then .hpp
+        local h_file = basename .. ".h"
+        local hpp_file = basename .. ".hpp"
+        if vim.fn.filereadable(h_file) == 1 then
+            alt_file = h_file
+        elseif vim.fn.filereadable(hpp_file) == 1 then
+            alt_file = hpp_file
+        end
+    end
+
+    if alt_file and vim.fn.filereadable(alt_file) == 1 then
+        vim.cmd("edit " .. alt_file)
+    else
+        print("No matching file found.")
+    end
+end, { desc = "Switch between .h/.cpp", noremap = true })
+
+vim.keymap.set("n", "<leader>v", function()
+  local pdfpath = vim.fn.expand("%:p:r") .. ".pdf"
+  vim.fn.jobstart({"zathura", pdfpath}, {detach = true})
+end, { desc = "View PDF in Zathura" })
+
+

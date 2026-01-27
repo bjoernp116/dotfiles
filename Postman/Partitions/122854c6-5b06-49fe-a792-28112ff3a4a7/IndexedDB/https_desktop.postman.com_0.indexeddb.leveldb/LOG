@@ -1,0 +1,16 @@
+2025/12/28-18:22:15.716 11cdf Reusing MANIFEST /home/pollen/.config/Postman/Partitions/122854c6-5b06-49fe-a792-28112ff3a4a7/IndexedDB/https_desktop.postman.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/12/28-18:22:15.716 11cdf Recovering log #90
+2025/12/28-18:22:15.719 11cdf Reusing old log /home/pollen/.config/Postman/Partitions/122854c6-5b06-49fe-a792-28112ff3a4a7/IndexedDB/https_desktop.postman.com_0.indexeddb.leveldb/000090.log 
+2025/12/28-18:22:15.719 11cdf Delete type=2 #92
+2025/12/28-18:22:15.719 11cdf Delete type=2 #86
+2025/12/28-18:22:17.056 11e7f Manual compaction at level-0 from '\x00\x1f\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00 \x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/12/28-18:22:17.380 11cdf Level-0 table #96: started
+2025/12/28-18:22:17.386 11cdf Level-0 table #96: 208271 bytes OK
+2025/12/28-18:22:17.390 11cdf Delete type=0 #90
+2025/12/28-18:22:17.390 11cdf Manual compaction at level-0 from '\x00 \x00\x00\x00' @ 72057594037927935 : 1 .. '\x00!\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/12/28-18:22:29.609 11ce0 Compacting 1@1 + 1@2 files
+2025/12/28-18:22:29.618 11ce0 Generated table #97@1: 907 keys, 47223 bytes
+2025/12/28-18:22:29.618 11ce0 Compacted 1@1 + 1@2 files => 47223 bytes
+2025/12/28-18:22:29.621 11ce0 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/12/28-18:22:29.621 11ce0 Delete type=2 #93
+2025/12/28-18:22:29.621 11ce0 Delete type=2 #96

@@ -5,7 +5,7 @@ return {
     },
     dependencies = {
         "hrsh7th/cmp-nvim-lsp",
-        -- "saghen/blink.cmp",
+        "saghen/blink.cmp",
         { "antosha417/nvim-lsp-file-operations", config = true },
         { "folke/neodev.nvim",                   opts = {} },
     },
@@ -93,50 +93,53 @@ return {
         -- disabled cuz blink has no tailwind support
 
         -- ( comment the ones in mason )
-        -- local lspconfig = require("lspconfig")
-        -- local capabilities = require("blink.cmp").get_lsp_capabilities() -- Import capabilities from blink.cmp
+        local capabilities = require("blink.cmp").get_lsp_capabilities() -- Import capabilities from blink.cmp
 
         -- Configure lua_ls
-        -- lspconfig.lua_ls.setup({
-        --     capabilities = capabilities,
-        --     settings = {
-        --         Lua = {
-        --             diagnostics = {
-        --                 globals = { "vim" },
-        --             },
-        --             completion = {
-        --                 callSnippet = "Replace",
-        --             },
-        --             workspace = {
-        --                 library = {
-        --                     [vim.fn.expand("$VIMRUNTIME/lua")] = true,
-        --                     [vim.fn.stdpath("config") .. "/lua"] = true,
-        --                 },
-        --             },
-        --         },
-        --     },
-        -- })
-        --
-        -- -- Configure tsserver (TypeScript and JavaScript)
-        -- lspconfig.ts_ls.setup({
-        --     capabilities = capabilities,
-        --     root_dir = function(fname)
-        --         local util = lspconfig.util
-        --         return not util.root_pattern('deno.json', 'deno.jsonc')(fname)
-        --             and util.root_pattern('tsconfig.json', 'package.json', 'jsconfig.json', '.git')(fname)
-        --     end,
-        --     single_file_support = false,
-        --     on_attach = function(client, bufnr)
-        --         -- Disable formatting if you're using a separate formatter like Prettier
-        --         client.server_capabilities.documentFormattingProvider = false
-        --     end,
-        --     init_options = {
-        --         preferences = {
-        --             includeCompletionsWithSnippetText = true,
-        --             includeCompletionsForImportStatements = true,
-        --         },
-        --     },
-        -- })
+        vim.lsp.config("lua_ls", {
+            capabilities = capabilities,
+            settings = {
+                Lua = {
+                    diagnostics = {
+                        globals = { "vim" },
+                    },
+                    completion = {
+                        callSnippet = "Replace",
+                    },
+                    workspace = {
+                        library = {
+                            [vim.fn.expand("$VIMRUNTIME/lua")] = true,
+                            [vim.fn.stdpath("config") .. "/lua"] = true,
+                        },
+                    },
+                },
+            },
+        })
+
+        -- Configure tsserver (TypeScript and JavaScript)
+        vim.lsp.config("ts_ls", {
+            capabilities = capabilities,
+            root_dir = function(fname)
+                local util = lspconfig.util
+                return not util.root_pattern('deno.json', 'deno.jsonc')(fname)
+                    and util.root_pattern('tsconfig.json', 'package.json', 'jsconfig.json', '.git')(fname)
+            end,
+            single_file_support = false,
+            on_attach = function(client, bufnr)
+                -- Disable formatting if you're using a separate formatter like Prettier
+                client.server_capabilities.documentFormattingProvider = false
+                vim.bo[bufnr].tabstop = 4
+                vim.bo[bufnr].shiftwidth = 4
+                vim.bo[bufnr].softtabstop = 4
+                vim.bo[bufnr].expandtab = true
+            end,
+            init_options = {
+                preferences = {
+                    includeCompletionsWithSnippetText = true,
+                    includeCompletionsForImportStatements = true,
+                },
+            },
+        })
 
         -- Add other LSP servers as needed, e.g., gopls, eslint, html, etc.
         -- lspconfig.gopls.setup({ capabilities = capabilities })

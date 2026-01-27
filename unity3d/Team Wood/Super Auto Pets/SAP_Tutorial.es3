@@ -1,0 +1,10 @@
+{
+	"Tutorial" : {
+		"__type" : "Spacewood.Unity.MonoBehaviours.Build.HangarTutorialModel,Assembly-CSharp",
+		"value" : {
+			"CompletedGoals" : [
+				0,3,5,4,6,2,7,1,8
+			]
+		}
+	}
+}

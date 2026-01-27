@@ -1,0 +1,13 @@
+# GIMP gimp-heal-tool options
+
+(brush "1. Pixel")
+(dynamics "Basic Dynamics")
+(pattern "Pine")
+(palette "Color History")
+(brush-size 1)
+(brush-spacing 0.20000000000000001)
+(brush-hardness 0.55000000000000004)
+(brush-force 1)
+(dynamics-enabled no)
+
+# end of gimp-heal-tool options

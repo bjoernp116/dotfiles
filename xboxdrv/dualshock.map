@@ -1,0 +1,32 @@
+[xboxdrv]
+silent = true
+deadzone = 4000
+
+[ui-axismap]
+x1=ABS_X
+y1=ABS_Y
+x2=ABS_RX
+y2=ABS_RY
+
+[ui-buttonmap]
+# Remap Xbox buttons to DS4 equivalents
+a=BTN_SOUTH   # Cross
+b=BTN_EAST    # Circle
+x=BTN_WEST    # Square
+y=BTN_NORTH   # Triangle
+
+lb=BTN_TL     # L1
+rb=BTN_TR     # R1
+lt=BTN_TL2    # L2
+rt=BTN_TR2    # R2
+back=BTN_SELECT
+start=BTN_START
+guide=BTN_MODE
+
+dl=BTN_DPAD_LEFT
+dr=BTN_DPAD_RIGHT
+du=BTN_DPAD_UP
+dd=BTN_DPAD_DOWN
+
+tl=BTN_THUMBL
+tr=BTN_THUMBR

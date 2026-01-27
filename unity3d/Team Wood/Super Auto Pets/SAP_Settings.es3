@@ -1,0 +1,392 @@
+{
+	"BattleFastForwardFactor" : {
+		"__type" : "float",
+		"value" : 1
+	},
+	"GlobalShowAchivementsInGame" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"GlobalLeaderboardOpen" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalLeaderboardMinimized" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"Fastfowarding" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"PrivateVersusLivesAmount" : {
+		"__type" : "int",
+		"value" : 10
+	},
+	"PrivateVersusPlayers" : {
+		"__type" : "int",
+		"value" : 2
+	},
+	"PrivateVersusGameName" : {
+		"__type" : "string",
+		"value" : "bjabbis"
+	},
+	"PrivateVersusCustomTurnDuration" : {
+		"__type" : "int",
+		"value" : 120
+	},
+	"CustomPackTutorial" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"GlobalSeenProducts" : {
+		"__type" : "System.Collections.Generic.HashSet`1[[System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],System.Core",
+		"value" : [
+			"fieldbackground","playground","sewer","wildwesttown","moneybin","snackbin","desertbackground","lavamountainbackground","scaryforestbackground","arctic","autumnforest","beach","bridge","castlewall","cavebackground","childroom","christmascabin","aboveclouds","colosseum","cornfield","cyberspace","dungeon","farm","foodland","frontyard","halloweenstreet","jungle","lavabackground","lunartemple","moon","pagoda","winterpineforest","savanna","schoolhallway","insidesecretbase","snowbackground","spacestation","underwater","urbancity","wizardschool","none","crow","starfish","bee","bluewhale","bulldog","capybara","cat","dolphin","dove","frog","jellyfish","parrot","penguin","racoon","redpanda","shark","snail","swordfish","turtle","tyrannosaurus","nohat","carnivaltiara","clochehat","cowboyhat","coonskinhat","junepartyhat","kufi","nefertitihat","robothat","umbrellahat","whitewig","beehivehat","birdnest","buckethat","pot","earlyadopter","foldednewspaper","fruithat","halo","hamburgerhat","mushroomhat","plantpot","plunger","rainbowhat","stackofhats","sunnysideupegg","tacohat","tinfoilhat","trafficcone","astronauthelmet","ballcap","balmoralbonnet","baseballhat","bearhat","bearskin","berethat","biretta","boudoircap","bowlerhat","bullseyehat","cangaceitohat","captainhat","chefhat","christmastreehat","custodianhelmet","elfhat","pinocchiohat","fedorahat","fezhat","fishcap","fishinghat","boater","flowerhat","gauchohat","mortarboard","hardhat","hennin","inventorhat","kepihat","moonhat","bicorne","nursehat","oldtophat","pamelahat","pantshat","parkrangerhat","partyhat","pilgrimhat","piratehat","propelierhat","rastacap","realbuckethat","scumbagstevehat","samhat","samo","sanpatrickhat","santahat","sherlockholmeshat","showerheadhat","sodacap","icecreamcone","sombrero","conicalasianhat","sunhat","tengumask","tophat","turban","vikinghelmet","winterhat","witchhat","wizardhat","standard","rocketlanding","busdelivery","stealthhats","meteorrain","randomroll","spaceteleporter","wormhole"
+		]
+	},
+	"PrivateVersusLives" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"PrivateVersusCustom" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"PrivateVersusSpectatorMode" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"PrivateVersusPacks" : {
+		"__type" : "int",
+		"value" : 1
+	},
+	"PrivateVersusTurnDuration2" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"Autoplaying" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"GlobalMenuMusic" : {
+		"__type" : "float",
+		"value" : 0.15
+	},
+	"GlobalInterfaceScale" : {
+		"__type" : "float",
+		"value" : 1
+	},
+	"GlobalFakeVersusTimer" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"GlobalBalathro" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"AbilityCardScale" : {
+		"__type" : "float",
+		"value" : 1
+	},
+	"GlobalDayCycle" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"GlobalPetCustomizerMode" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"ArenaMirror" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"RankedVersusMirror" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"RankedVersusTime" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"RankedVersusPlayers" : {
+		"__type" : "int",
+		"value" : 1
+	},
+	"PrivateVersusLossCapAmount" : {
+		"__type" : "int",
+		"value" : 3
+	},
+	"PrivateVersusLossCap" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"PrivateVersusShopRewardsAmount" : {
+		"__type" : "int",
+		"value" : 2
+	},
+	"PrivateVersusShopRewards" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"PrivateVersusNextOpponent" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"PrivateVersusHardMode" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"PrivateVersusLifeSystemValue" : {
+		"__type" : "int",
+		"value" : 4
+	},
+	"PrivateVersusLifeSystem" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalVerifyEmailPromptLastOn" : {
+		"__type" : "System.DateTime,mscorlib",
+		"value" : {
+			"ticks" : 621355968000000000
+		}
+	},
+	"PrivateVersusJoinName" : {
+		"__type" : "string",
+		"value" : ""
+	},
+	"GlobalPromptEndTurnWithUnspentGold" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"PlayPack" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"SkirmishTurnDuration" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"SkirmishPackMode" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"GlobalSpeed" : {
+		"__type" : "int",
+		"value" : 1
+	},
+	"GlobalSkipNewbie" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalPromptNoExpStacking" : {
+		"__type" : "int",
+		"value" : 3
+	},
+	"GlobalPromptNoTrippleReward" : {
+		"__type" : "int",
+		"value" : 3
+	},
+	"GlobalNativeCursor" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalCanvasCursorSize" : {
+		"__type" : "float",
+		"value" : 1
+	},
+	"GlobalCanvasCursor" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalMinionHatsMap" : {
+		"__type" : "System.Collections.Generic.Dictionary`2[[Spacewood.Core.Enums.MinionEnum, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[Spacewood.Core.Enums.Cosmetic, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],mscorlib",
+		"value" : {
+		}
+	},
+	"GlobalHiddenAchievements" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalRewardsDisabled" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalMinionSkinsMap" : {
+		"__type" : "System.Collections.Generic.Dictionary`2[[Spacewood.Core.Enums.MinionEnum, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089]],mscorlib",
+		"value" : {
+		}
+	},
+	"SoundExperienceVariant" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"GlobalBuffStyle" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"GlobalMenuBackground" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"GlobalRandomEntranceExclusions" : {
+		"__type" : "System.Collections.Generic.HashSet`1[[Spacewood.Core.Enums.Entrance, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],System.Core",
+		"value" : [
+			
+		]
+	},
+	"GlobalRandomEntrance" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalRandomMascotExclusions" : {
+		"__type" : "System.Collections.Generic.HashSet`1[[Spacewood.Core.Enums.Mascot, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],System.Core",
+		"value" : [
+			
+		]
+	},
+	"GlobalRandomMascot" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalRandomBackgroundExclusions" : {
+		"__type" : "System.Collections.Generic.HashSet`1[[Spacewood.Core.Enums.Background, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],System.Core",
+		"value" : [
+			
+		]
+	},
+	"GlobalRandomBackground" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalRandomCosmeticExclusions" : {
+		"__type" : "System.Collections.Generic.HashSet`1[[Spacewood.Core.Enums.Cosmetic, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]],System.Core",
+		"value" : [
+			
+		]
+	},
+	"GlobalRandomCosmetic" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"Language" : {
+		"__type" : "string",
+		"value" : null
+	},
+	"LobbyVersusWarning" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"PrivateVersusOpenDecks" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalAdvancedVersusOptions" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalBackgroundSkins" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"GlobalSpellSkins" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"GlobalMinionSkins" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"GlobalPerk" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"GlobalSkins" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"GlobalMergePrompts" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"VersusOpponentAllPacks" : {
+		"__type" : "bool",
+		"value" : true
+	},
+	"MobileResolution" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"PrivateVersusTurnDurationAmount" : {
+		"__type" : "int",
+		"value" : 120
+	},
+	"PrivateVersusTurnDuration" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"PrivateVersusLoseLives" : {
+		"__type" : "int",
+		"value" : 4
+	},
+	"PrivateVersusStartLivesAmount" : {
+		"__type" : "int",
+		"value" : 10
+	},
+	"PrivateVersusStartLives" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"GlobalDisablePrompts" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalHideEmail" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalHideUsernames" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalWindowMode" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"GlobalShakeMultiplier" : {
+		"__type" : "float",
+		"value" : 1
+	},
+	"GlobalBattleMusic" : {
+		"__type" : "float",
+		"value" : 1
+	},
+	"GlobalAmbianceVolume" : {
+		"__type" : "float",
+		"value" : 0.5
+	},
+	"GlobalMusicVolume" : {
+		"__type" : "float",
+		"value" : 1
+	},
+	"GlobalSoundVolume" : {
+		"__type" : "float",
+		"value" : 1
+	},
+	"BuildAutoPickNameForceRandom" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"BuildAutoPickName" : {
+		"__type" : "bool",
+		"value" : false
+	},
+	"ArenaDifficulty" : {
+		"__type" : "int",
+		"value" : 0
+	},
+	"ArenaOpponentAllPacks" : {
+		"__type" : "bool",
+		"value" : false
+	}
+}

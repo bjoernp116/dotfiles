@@ -1,0 +1,11 @@
+{
+	"Consent" : {
+		"__type" : "Spacewood.Unity.ConsentData,Assembly-CSharp",
+		"value" : {
+			"Version" : 4,
+			"SeenPrivacyPolicy" : true,
+			"SeenTerms" : true,
+			"Confirmed" : true
+		}
+	}
+}

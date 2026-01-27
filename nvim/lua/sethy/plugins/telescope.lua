@@ -1,6 +1,6 @@
 return {
 	"nvim-telescope/telescope.nvim",
-	branch = "0.1.x",
+	branch = "master",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
@@ -29,6 +29,18 @@ return {
 
 		telescope.setup({
 			defaults = {
+                vimgrep_arguments = {
+                    'rg',
+                    '--color=never',
+                    '--no-heading',
+                    '--with-filename',
+                    '--line-number',
+                    '--column',
+                    '--smart-case',
+                    '--hidden',
+                    '--glob',
+                    '!.git/',
+                },
 				path_display = { "smart" },
 				mappings = {
 					i = {
@@ -37,7 +49,15 @@ return {
 						["<C-q>"] = actions.send_selected_to_qflist + custom_actions.open_trouble_qflist,
 					},
 				},
+                file_ignore_patterns = { "build/", "%.o", "%.out", ".git/" }
 			},
+            pickers = {
+                find_files = {
+                    find_command = {
+                        "fd", "--type", "f", "--hidden", "--exclude", ".git"
+                    }
+                }
+            },
             -- config for telescope themes
             extensions = {
                 themes = {

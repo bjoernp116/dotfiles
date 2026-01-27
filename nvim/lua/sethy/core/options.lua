@@ -3,6 +3,10 @@
 -- vim.cmd("let g:netrw_liststyle = 3")
 vim.cmd("let g:netrw_banner = 0 ")
 
+
+vim.o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal,localoptions"
+
+
 -- vim.opt.guicursor = ""
 vim.opt.nu = true
 vim.opt.relativenumber = true
@@ -58,3 +62,28 @@ vim.opt.mouse = "a"
 
 -- gets rid of line with white spaces
 vim.g.editorconfig = true
+
+
+vim.api.nvim_create_autocmd("BufWritePost", {
+    pattern = "*.md",
+    callback = function()
+        local filepath = vim.fn.expand("%:p")
+        local pdfpath = vim.fn.expand("%:p:r") .. ".pdf"
+
+        vim.fn.jobstart(
+            {"pandoc", filepath, "-o", pdfpath, "--pdf-engine=tectonic"}
+        )
+    end,
+})
+
+vim.api.nvim_create_autocmd("BufWritePost", {
+    pattern = "*.tex",
+    callback = function()
+        local filepath = vim.fn.expand("%:p")
+        local pdfpath = vim.fn.expand("%:p:r") .. ".pdf"
+
+        vim.fn.jobstart(
+            { "tectonic", filepath }
+        )
+    end,
+})

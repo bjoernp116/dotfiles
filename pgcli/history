@@ -1,0 +1,780 @@
+
+# 2025-11-03 17:54:09.438481
++INSERT INTO questions (
++    question_id,
++    group_id,
++    question,
++    qtype_id,
++    format,
++    answer,
++    atype_id,
++    rights,
++    wrongs,
++    status,
++    comment,
++    copyright,
++    created_by,
++    created_time,
++    updated_by,
++    updated_time
++)
++SELECT
++    question_id::integer,
++    COALESCE(NULLIF(group_id, ''), '0')::integer,
++    question,
++    qtype_id::integer,
++    format,
++    answer,
++    atype_id::integer,
++    rights::integer,
++    wrongs::integer,
++    status::integer,
++    NULLIF(comment, ''),
++    NULLIF(copyright, ''),
++    NULLIF(created_by, ''),
++    NULLIF(NULLIF(created_time, ''), '0000-00-00 00:00:00')::timestamp,
++    NULLIF(updated_by, ''),
++    NULLIF(NULLIF(updated_time, ''), '0000-00-00 00:00:00')::timestamp
++FROM questions_raw;
+
+# 2025-11-03 17:55:04.160876
++DELETE * FROM questions_raw
+
+# 2025-11-03 17:55:15.904171
++DELETE questions_raw
+
+# 2025-11-03 23:49:19.571208
++DROP questions_raw;
+
+# 2025-11-03 23:50:22.876553
++DROP TABLE questions_raw;
+
+# 2025-11-03 23:50:38.785093
++select * from questions;
+
+# 2025-11-03 23:51:02.982074
++CREATE TABLE questions_raw (
++    question_id TEXT,
++    group_id TEXT,
++    question TEXT,
++    qtype_id TEXT,
++    format TEXT,
++    answer TEXT,
++    atype_id TEXT,
++    rights TEXT,
++    wrongs TEXT,
++    status TEXT,
++    comment TEXT,
++    copyright TEXT,
++    created_by TEXT,
++    created_time TEXT,
++    updated_by TEXT,
++    updated_time TEXT
++);
++
+
+# 2025-11-03 23:51:12.439669
++select * from questions_raw;
+
+# 2025-11-03 23:52:21.168833
++\copy questions_raw FROM 'one_dump/pg_questions.csv' WITH (FORMAT csv, HEADER true, QUOTE '"', ESCAPE '"');
+
+# 2025-11-03 23:52:33.081691
++select * from questions_raw;
+
+# 2025-11-03 23:52:44.677235
++INSERT INTO questions (
++    question_id,
++    group_id,
++    question,
++    qtype_id,
++    format,
++    answer,
++    atype_id,
++    rights,
++    wrongs,
++    status,
++    comment,
++    copyright,
++    created_by,
++    created_time,
++    updated_by,
++    updated_time
++)
++SELECT
++    question_id::integer,
++    COALESCE(NULLIF(group_id, ''), '0')::integer,
++    question,
++    qtype_id::integer,
++    format,
++    answer,
++    atype_id::integer,
++    rights::integer,
++    wrongs::integer,
++    status::integer,
++    NULLIF(comment, ''),
++    NULLIF(copyright, ''),
++    NULLIF(created_by, ''),
++    NULLIF(NULLIF(created_time, ''), '0000-00-00 00:00:00')::timestamp,
++    NULLIF(updated_by, ''),
++    NULLIF(NULLIF(updated_time, ''), '0000-00-00 00:00:00')::timestamp
++FROM questions_raw;
++
+
+# 2025-11-03 23:53:44.053545
++INSERT INTO questions (
++    question_id,
++    group_id,
++    question,
++    qtype_id,
++    format,
++    answer,
++    atype_id,
++    rights,
++    wrongs,
++    status,
++    comment,
++    copyright,
++    created_by,
++    created_time,
++    updated_by,
++    updated_time
++)
++SELECT
++    question_id::integer,
++    COALESCE(NULLIF(group_id, ''), '0')::integer,
++    question,
++    qtype_id::integer,
++    format,
++    answer,
++    atype_id::integer,
++    rights::integer,
++    wrongs::integer,
++    status::integer,
++    NULLIF(comment, ''),
++    NULLIF(copyright, ''),
++    created_by,
++    NULLIF(NULLIF(created_time, ''), '0000-00-00 00:00:00')::timestamp,
++    updated_by,
++    NULLIF(NULLIF(updated_time, ''), '0000-00-00 00:00:00')::timestamp
++FROM questions_raw;
++
+
+# 2025-11-03 23:54:44.110391
++\d questions
+
+# 2025-11-03 23:55:53.199877
++ALTER TABLE questions alter column created_by TYPE TEXT NULL;
+
+# 2025-11-03 23:56:05.163807
++ALTER TABLE questions alter column created_by TYPE TEXT;
+
+# 2025-11-03 23:56:10.316080
++\d questions
+
+# 2025-11-03 23:57:06.821542
++ALTER TABLE questions alter column created_by DROP NOT NULL;
+
+# 2025-11-03 23:57:09.914132
++\d questions
+
+# 2025-11-03 23:57:18.473080
++ALTER TABLE questions alter column updated_by DROP NOT NULL;
+
+# 2025-11-03 23:57:22.106545
++\d questions
+
+# 2025-11-03 23:57:31.749377
++INSERT INTO questions (
++    question_id,
++    group_id,
++    question,
++    qtype_id,
++    format,
++    answer,
++    atype_id,
++    rights,
++    wrongs,
++    status,
++    comment,
++    copyright,
++    created_by,
++    created_time,
++    updated_by,
++    updated_time
++)
++SELECT
++    question_id::integer,
++    COALESCE(NULLIF(group_id, ''), '0')::integer,
++    question,
++    qtype_id::integer,
++    format,
++    answer,
++    atype_id::integer,
++    rights::integer,
++    wrongs::integer,
++    status::integer,
++    NULLIF(comment, ''),
++    NULLIF(copyright, ''),
++    created_by,
++    NULLIF(NULLIF(created_time, ''), '0000-00-00 00:00:00')::timestamp,
++    updated_by,
++    NULLIF(NULLIF(updated_time, ''), '0000-00-00 00:00:00')::timestamp
++FROM questions_raw;
++
+
+# 2025-11-03 23:58:33.545842
++SELECT * FROM questions_raw WHERE created_time = '0000-00-00 00:00:00';
+
+# 2025-11-03 23:58:41.527990
++SELECT * FROM questions_raw WHERE created_time == '0000-00-00 00:00:00';
+
+# 2025-11-03 23:58:51.286104
++SELECT * FROM questions_raw WHERE created_time = '0000-00-00 00:00:00';
+
+# 2025-11-03 23:58:58.560619
++SELECT * FROM questions_raw WHERE created_time = '';
+
+# 2025-11-04 00:01:15.594142
++INSERT INTO questions (
++    question_id,
++    group_id,
++    question,
++    qtype_id,
++    format,
++    answer,
++    atype_id,
++    rights,
++    wrongs,
++    status,
++    comment,
++    copyright,
++    created_by,
++    created_time,
++    updated_by,
++    updated_time
++)
++SELECT
++    question_id::integer,
++    COALESCE(NULLIF(group_id, ''), '0')::integer,
++    question,
++    qtype_id::integer,
++    format,
++    answer,
++    atype_id::integer,
++    rights::integer,
++    wrongs::integer,
++    status::integer,
++    NULLIF(comment, ''),
++    NULLIF(copyright, ''),
++    created_by,
++    NULLIF(NULLIF(created_time, ''), '0000-00-00 00:00:00')::timestamp,
++    updated_by,
++    NULLIF(NULLIF(updated_time, ''), '0000-00-00 00:00:00')::timestamp
++FROM questions_raw;
++
+
+# 2025-11-04 00:01:39.882166
++alter table questions alter column created_time drop not null;
+
+# 2025-11-04 00:01:43.976262
++INSERT INTO questions (
++    question_id,
++    group_id,
++    question,
++    qtype_id,
++    format,
++    answer,
++    atype_id,
++    rights,
++    wrongs,
++    status,
++    comment,
++    copyright,
++    created_by,
++    created_time,
++    updated_by,
++    updated_time
++)
++SELECT
++    question_id::integer,
++    COALESCE(NULLIF(group_id, ''), '0')::integer,
++    question,
++    qtype_id::integer,
++    format,
++    answer,
++    atype_id::integer,
++    rights::integer,
++    wrongs::integer,
++    status::integer,
++    NULLIF(comment, ''),
++    NULLIF(copyright, ''),
++    created_by,
++    NULLIF(NULLIF(created_time, ''), '0000-00-00 00:00:00')::timestamp,
++    updated_by,
++    NULLIF(NULLIF(updated_time, ''), '0000-00-00 00:00:00')::timestamp
++FROM questions_raw;
++
+
+# 2025-11-04 00:07:43.486970
++\d questions
+
+# 2025-11-04 00:10:10.648641
++INSERT INTO questions (
++    question_id,
++    group_id,
++    question,
++    qtype_id,
++    format,
++    answer,
++    atype_id,
++    rights,
++    wrongs,
++    status,
++    comment,
++    copyright,
++    created_by,
++    created_time,
++    updated_by,
++    updated_time
++)
++SELECT
++    question_id::INT,
++    group_id::INT,
++    question,
++    qtype_id::INT,
++    format,
++    answer,
++    atype_id::INT,
++    rights::INT,
++    wrongs::INT,
++    status::INT,
++    NULLIF(comment, ''),
++    NULLIF(copyright, ''),
++    NULLIF(NULLIF(created_by, 'NULL'), ''),
++    CASE
++        WHEN created_time IN ('', 'NULL', '0000-00-00 00:00:00') THEN NULL
++        ELSE created_time::timestamp
++    END,
++    NULLIF(NULLIF(updated_by, 'NULL'), ''),
++    CASE
++        WHEN updated_time IN ('', 'NULL', '0000-00-00 00:00:00') THEN NULL
++        ELSE updated_time::timestamp
++    END
++FROM questions_raw;
++
+
+# 2025-11-04 00:10:26.313362
++SELECT * FROM questions;
+
+# 2025-11-04 00:11:17.837565
++\dt
+
+# 2025-11-04 00:11:34.272448
++DROP TABLE questions_raw;
+
+# 2025-11-04 00:12:50.224617
++SELECT * FROM games;
+
+# 2025-11-04 00:18:07.067047
++CREATE user meratsu_user with encrypted password 'meratsu116';
+
+# 2025-11-04 00:18:31.266210
++grant all privileges on database meratsu to meratsu_user;
+
+# 2025-11-04 00:53:37.623020
++select current_user;
+
+# 2025-11-04 00:55:06.525450
++quit
+
+# 2025-11-04 00:55:29.809962
++select current_user;
+
+# 2025-11-04 00:55:45.887486
++select * from api_keys;
+
+# 2025-11-04 00:55:56.863664
++select current_user;
+
+# 2025-11-04 00:56:30.202979
++quit
+
+# 2025-11-04 00:56:40.494241
++select * from api_keys;
+
+# 2025-11-04 00:56:52.359960
++\d
+
+# 2025-11-04 00:57:37.526380
++ALTER TABLE * OWNER TO meratsu_user;
+
+# 2025-11-04 00:57:47.496443
++ALTER TABLE api_keys OWNER TO meratsu_user;
+
+# 2025-11-04 00:59:09.968770
++exit
+
+# 2025-11-04 00:59:20.788159
++ALTER TABLE api_keys OWNER TO meratsu_user;
+
+# 2025-11-04 00:59:27.562047
++\d
+
+# 2025-11-04 01:00:56.237103
++reassign owned by admin [, ...] to meratsu_user;
+
+# 2025-11-04 01:01:44.846692
++reassign owned by admin [answers, categories, games] to meratsu_user;
+
+# 2025-11-04 01:01:56.951307
++reassign owned by admin to meratsu_user;
+
+# 2025-11-04 01:01:59.795508
++\d
+
+# 2025-11-04 01:05:43.007442
++\dt
+
+# 2025-11-04 01:05:53.030153
++\d
+
+# 2025-11-04 01:05:58.579480
++\dt
+
+# 2025-11-04 01:06:06.540503
++\d answers
+
+# 2025-11-04 01:06:11.524645
++\d questions
+
+# 2025-11-04 01:09:10.072505
++ALTER TABLE question alter column status type smallint;
+
+# 2025-11-04 01:09:17.138611
++ALTER TABLE questions alter column status type smallint;
+
+# 2025-11-04 01:09:21.480827
++\d questions
+
+# 2025-11-04 01:10:08.254074
++\d games
+
+# 2025-11-04 15:13:22.174786
++\d
+
+# 2025-11-04 15:13:39.760224
++exit
+
+# 2025-11-04 15:15:08.038008
++CREATE TABLE IF NOT EXISTS questions (
++    question_id INTEGER PRIMARY KEY NOT NULL,
++    group_id    INTEGER NOT NULL,
++    question    TEXT    NOT NULL,
++    qtype_id    INTEGER NOT NULL,
++    format      TEXT    NOT NULL,
++    answer      TEXT    NOT NULL,
++    atype_id    INTEGER NOT NULL,
++    rights      INTEGER NOT NULL,
++    wrongs      INTEGER NOT NULL,
++    status      INTEGER NOT NULL,
++    comment     TEXT    NULL,
++    copyright   TEXT    NULL,
++    created_by  TEXT    NOT NULL,
++    created_time TEXT NOT NULL,
++    updated_by  TEXT    NULL,
++    updated_time TEXT NULL
++);
++
++CREATE TABLE IF NOT EXISTS tags (
++    tag_id     INTEGER PRIMARY KEY NOT NULL,
++    tag_name   TEXT NOT NULL,
++    active     INTEGER
++);
++
++CREATE TABLE IF NOT EXISTS types (
++    type_id    INTEGER PRIMARY KEY NOT NULL,
++    type_name  TEXT
++);
++
++CREATE TABLE IF NOT EXISTS categories (
++    question_id INTEGER NOT NULL,
++    tag_id INTEGER NOT NULL
++);
++
++CREATE TABLE IF NOT EXISTS answers (
++    game_id INTEGER NULL,
++    question_id INTEGER NOT NULL,
++    level INTEGER NOT NULL,
++    correct INTEGER NOT NULL
++);
++
++CREATE TABLE IF NOT EXISTS games (
++    game_id INTEGER PRIMARY KEY NOT NULL,
++    email TEXT NOT NULL,
++    tag_id INTEGER,
++    start_time TEXT NOT NULL,
++    finish_time TEXT,
++    level INTEGER,
++    numrights INTEGER
++);
++
++CREATE TABLE IF NOT EXISTS users (
++    email TEXT PRIMARY KEY NOT NULL,
++    password TEXT,
++    type TEXT NOT NULL,
++    name TEXT,
++    cc TEXT,
++    birthyear INTEGER,
++    regcode INTEGER,
++    regdate TEXT
++);
++
++
++CREATE TABLE IF NOT EXISTS api_keys (
++    api_key TEXT PRIMARY KEY NOT NULL
++);
++
++CREATE INDEX IF NOT EXISTS idx_games_start_time ON games(start_time);
++
++
+
+# 2025-11-04 15:15:21.746688
++create table questions (
+
+# 2025-11-04 15:16:22.948140
++\i structure.sql
+
+# 2025-11-04 15:17:06.658624
++exit
+
+# 2025-11-04 15:17:53.073005
++\i structure.sql
+
+# 2025-11-04 15:18:07.759662
++\d
+
+# 2025-11-04 15:19:38.797208
++ALTER TABLE questions alter column status type smallint;
+
+# 2025-11-04 15:22:14.781655
++\i structure.sql
+
+# 2025-11-04 15:22:21.061665
++\d questions
+
+# 2025-11-04 15:22:42.958505
++\copy questions_raw FROM 'one_dump/pg_questions.csv' WITH (FORMAT csv, HEADER true, QUOTE '"', ESCAPE '"');
+
+# 2025-11-04 15:23:00.961553
++\copy questions FROM 'one_dump/pg_questions.csv' WITH (FORMAT csv, HEADER true, QUOTE '"', ESCAPE '"');
+
+# 2025-11-04 15:23:05.801742
++\d questions
+
+# 2025-11-04 15:23:24.327144
++select * from questions;
+
+# 2025-11-04 16:16:26.175221
++\copy games FROM 'one_dump/games.csv' WITH (FORMAT csv, HEADER true, QUOTE '"', ESCAPE '"');
+
+# 2025-11-04 16:16:45.481992
++alter table games alter column email drop not null;
+
+# 2025-11-04 16:16:48.455301
++\copy games FROM 'one_dump/games.csv' WITH (FORMAT csv, HEADER true, QUOTE '"', ESCAPE '"');
+
+# 2025-11-04 16:16:56.549303
++select * from games;
+
+# 2025-11-04 16:19:17.189247
++\d games
+
+# 2025-11-04 16:19:45.014409
++alter table games check (finish_time > start_time);
+
+# 2025-11-04 16:46:10.695140
++\d games
+
+# 2025-11-04 16:47:40.425366
++alter table games alter column start_time type timestamptz;
+
+# 2025-11-04 16:48:49.641126
++ALTER TABLE games
++ALTER COLUMN start_time
++TYPE timestamptz
++USING start_time AT TIME ZONE 'UTC';
++
+
+# 2025-11-04 16:49:42.312607
++ALTER TABLE games
++ALTER COLUMN start_time
++TYPE timestamptz
++USING start_time::timestamptz;
++
+
+# 2025-11-04 16:49:47.867644
++\d games
+
+# 2025-11-04 16:50:07.467621
++ALTER TABLE games
++ALTER COLUMN finish_time
++TYPE timestamptz
++USING start_time::timestamptz;
++
+
+# 2025-11-04 16:50:15.808699
++\d games
+
+# 2025-11-04 16:58:48.209748
++select * from api_keys;
+
+# 2025-11-04 16:59:35.714283
++INSERT INTO api_keys values ('pollen');
+
+# 2025-11-04 16:59:37.830218
++select * from api_keys;
+
+# 2025-11-04 17:00:08.255275
++\d
+
+# 2025-11-04 17:00:56.579784
++\copy categories FROM 'one_dump/categories.csv' WITH (FORMAT csv, HEADER true, QUOTE '"', ESCAPE '"');
+
+# 2025-11-04 17:01:12.333062
++select * from categories;
+
+# 2025-11-04 17:01:33.522267
++\copy tags FROM 'one_dump/tags.csv' WITH (FORMAT csv, HEADER true, QUOTE '"', ESCAPE '"');
+
+# 2025-11-04 17:01:38.923292
++select * from tags;
+
+# 2025-11-04 17:03:22.912694
++\d
+
+# 2025-11-04 17:03:55.487080
++CREATE VIEW IF NOT EXISTS valid_groups AS
++SELECT group_id
++FROM questions
++WHERE group_id IS NOT NULL
++GROUP BY group_id
++HAVING COUNT(*) = 5;
++
++CREATE VIEW IF NOT EXISTS groups_view AS 
++SELECT
++    group_id,
++    group_concat(answer, '|') AS options,
++    count(*) as opt_count
++FROM questions
++WHERE (group_id IS NOT NULL)
++AND status = 1
++GROUP BY group_id;
++
++CREATE VIEW questions_view AS
++SELECT 
++    question_id,
++    group_id,
++    tag_id,
++    tag_name,
++    question,
++    qtype_id,
++    format,
++    answer,
++    atype_id,
++    options,
++    rights,
++    wrongs,
++    CASE 
++        WHEN total = 0 THEN 1
++        ELSE
++            CASE 
++                WHEN score < 1 THEN 1
++                WHEN score > 5 THEN 5
++                ELSE CAST(score AS INTEGER) + (score > CAST(score AS INTEGER))
++            END
++    END AS level,
++    status,
++    comment,
++    copyright,
++    created_by,
++    created_time,
++    updated_by,
++    updated_time
++FROM (
++    SELECT 
++        q.question_id,
++        q.group_id,
++        t.tag_id, 
++        t.tag_name,
++        q.question,
++        q.qtype_id,
++        q.format,
++        q.answer,
++        q.atype_id,
++        g.options,
++        q.rights,
++        q.wrongs,
++        q.status,
++        q.comment,
++        q.copyright,
++        q.created_by,
++        q.created_time,
++        q.updated_by,
++        q.updated_time,
++        (q.wrongs + q.rights) AS total,
++        ((q.wrongs * 50.0) / ((q.wrongs + q.rights) * 8)) AS score
++    FROM questions q
++    JOIN categories c ON c.question_id = q.question_id
++    JOIN tags t ON c.tag_id = t.tag_id
++    LEFT JOIN groups_view g ON q.group_id = g.group_id
++) AS derived;
++
+
+# 2025-11-04 17:04:17.778157
++\i post_copy.sql
+
+# 2025-11-04 17:06:14.945996
++\d
+
+# 2025-11-04 17:19:16.505840
++select * from tags;
+
+# 2025-11-04 17:20:11.360100
++select * from tags where tag_name = "Film";
+
+# 2025-11-04 17:21:05.045397
++select * from tags where tag_name = 'Film';
+
+# 2025-11-04 17:45:50.820515
++\d tag
+
+# 2025-11-04 17:45:52.101362
++\d tags
+
+# 2025-11-04 17:46:07.316656
++select * from tags
+
+# 2025-11-04 17:46:31.095678
++alter table tags alter column active type BOOL;
+
+# 2025-11-04 17:46:43.707632
++alter table tags alter column active type BOOL using active::boolean;
+
+# 2025-11-04 17:46:48.432842
++select * from tags
+
+# 2025-11-04 17:47:28.950051
++\d tags
+
+# 2025-11-04 17:48:02.951031
++alter table tags alter column active NOT NULL;
+
+# 2025-11-04 17:48:13.232229
++alter table tags alter column active TYPE BOOL NOT NULL;
+
+# 2025-11-10 01:31:27.341071
++\d
+
+# 2025-11-10 01:31:30.587829
++\q

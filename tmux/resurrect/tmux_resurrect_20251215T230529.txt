@@ -1,0 +1,94 @@
+pane	0	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	10	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	11	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	12	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	13	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	14	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	15	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	17	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	18	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	19	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	2	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	20	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	21	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	22	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	25	0	1	:*	0	arch	:/home/pollen/Downloads	1	zsh	:
+pane	26	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	27	0	1	:*	0	arch	:/home/pollen/projects/map_gen/src	1	zsh	:
+pane	30	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	31	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	32	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	34	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	35	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	4	0	1	:*	0	arch	:/home/pollen/Games/Digital-Logic-Sim	1	zsh	:
+pane	6	0	1	:*	0	arch	:/home/pollen/.new_lunarclient/settings	1	zsh	:
+pane	8	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	9	0	1	:*	0	arch	:/home/pollen	1	zsh	:
+pane	Downloads	0	0	:-	0	arch	:/home/pollen/Downloads	0	zsh	:
+pane	Downloads	0	0	:-	1	arch	:/home/pollen/Downloads	1	zsh	:
+pane	Downloads	1	1	:*	0	arch	:/home/pollen/Downloads	1	zsh	:
+pane	_config	0	1	:*	0	arch	:/home/pollen/.config/nvim/lua/sethy/plugins	1	nvim	:nvim quicker.lua
+pane	_lunarclient	0	1	:*	0	arch	:/home/pollen/.lunarclient/settings/game	1	nvim	:nvim accounts.json
+pane	_lunarclient	0	1	:*	1	arch	:/home/pollen/.new_lunarclient/settings/game	0	nvim	:nvim accounts.json
+pane	_lunarclient	1	0	:-	0	Wine Debugger	:/home/pollen/.wine/drive_c/users/pollen/AppData/Roaming/.minecraft	1	nvim	:nvim launcher_accounts.json
+pane	crust	0	1	:*	0	arch	:/home/pollen/projects/crust	1	nvim	:nvim src/main.rs
+pane	crust	0	1	:*	1	arch	:/home/pollen/projects/crust/build	0	nvim	:nvim test.asm
+pane	crust	1	0	:-	0	arch	:/home/pollen/projects/crust/build	1	zsh	:
+pane	map_gen	0	1	:*	0	arch	:/home/pollen/projects/map_gen	1	nvim	:nvim src/main.rs
+pane	map_gen	1	0	:-	0	arch	:/home/pollen/projects/map_gen	1	zsh	:
+pane	map_gen	2	0	:	0	arch	:/home/pollen/projects/map_gen	1	zsh	:
+pane	meratsu	1	1	:*	0	pollen@arch:/home/pollen/projects/meratsu/api	:/home/pollen/projects/meratsu/api/src	1	nvim	:nvim main.rs
+pane	meratsu	1	1	:*	1	arch	:/home/pollen/projects/meratsu/api	0	nvim	:nvim Cargo.toml
+pane	meratsu	2	0	:-	0	pollen@arch:/home/pollen/projects/meratsu/api	:/home/pollen/projects/meratsu	1	zsh	:
+pane	meratsu	3	0	:	0	postgres@arch:~	:/home/pollen/projects/meratsu/api	1	zsh	:
+pane	meratsu/api	0	1	:*	0	arch	:/home/pollen/Downloads	1	zsh	:
+pane	meratsu/meratsu	0	1	:*	0	arch	:/home/pollen/projects/meratsu/web	1	zsh	:
+pane	open	0	1	:*	0	arch	:/home/pollen/projects/map_gen	1	zsh	:
+pane	pollos	0	0	:-	0	arch	:/home/pollen/projects/pollos/src	0	nvim	:nvim main.rs
+pane	pollos	0	0	:-	1	arch	:/home/pollen/projects/pollos/src	1	nvim	:nvim main.rs
+pane	pollos	1	1	:*	0	arch	:/home/pollen/projects/pollos	1	zsh	:
+window	0	0	:zsh	1	:*	bdbd,139x34,0,0,0	:
+window	10	0	:zsh	1	:*	bdbe,139x34,0,0,1	:
+window	11	0	:zsh	1	:*	bdbf,139x34,0,0,2	:
+window	12	0	:zsh	1	:*	bdc0,139x34,0,0,3	:
+window	13	0	:zsh	1	:*	bdc1,139x34,0,0,4	:
+window	14	0	:zsh	1	:*	bdc2,139x34,0,0,5	:
+window	15	0	:zsh	1	:*	bdc3,139x34,0,0,6	:
+window	17	0	:zsh	1	:*	bdc4,139x34,0,0,7	:
+window	18	0	:zsh	1	:*	bdc5,139x34,0,0,8	:
+window	19	0	:zsh	1	:*	bdc6,139x34,0,0,9	:
+window	2	0	:zsh	1	:*	5f0f,139x34,0,0,10	:
+window	20	0	:zsh	1	:*	5f10,139x34,0,0,11	:
+window	21	0	:zsh	1	:*	5f11,139x34,0,0,12	:
+window	22	0	:zsh	1	:*	5f12,139x34,0,0,13	:
+window	25	0	:zsh	1	:*	5f13,139x34,0,0,14	:
+window	26	0	:zsh	1	:*	5f14,139x34,0,0,15	:
+window	27	0	:zsh	1	:*	5f15,139x34,0,0,16	:
+window	30	0	:zsh	1	:*	5f16,139x34,0,0,17	:
+window	31	0	:zsh	1	:*	5f17,139x34,0,0,18	:
+window	32	0	:zsh	1	:*	5f18,139x34,0,0,19	:
+window	34	0	:zsh	1	:*	df0f,139x34,0,0,20	:
+window	35	0	:zsh	1	:*	df18,139x34,0,0,48	:
+window	4	0	:zsh	1	:*	df10,139x34,0,0,21	:
+window	6	0	:zsh	1	:*	df11,139x34,0,0,22	:
+window	8	0	:zsh	1	:*	df12,139x34,0,0,23	:
+window	9	0	:zsh	1	:*	df13,139x34,0,0,24	:
+window	Downloads	0	:zsh	0	:-	3e7d,139x34,0,0[139x17,0,0,25,139x16,0,18,26]	:
+window	Downloads	1	:zsh	1	:*	df16,139x34,0,0,27	:
+window	_config	0	:nvim	1	:*	df17,139x34,0,0,28	:
+window	_lunarclient	0	:nvim	1	:*	697e,139x34,0,0{73x34,0,0,29,65x34,74,0,30}	:
+window	_lunarclient	1	:nvim	0	:-	5f11,139x34,0,0,31	:
+window	crust	0	:nvim	0	:-	e972,139x34,0,0{73x34,0,0,32,65x34,74,0,33}	:
+window	crust	1	:zsh	1	:*	5f14,139x34,0,0,34	:
+window	map_gen	0	:nvim	1	:*	5f15,139x34,0,0,35	:
+window	map_gen	1	:zsh	0	:-	5f16,139x34,0,0,36	:
+window	map_gen	2	:zsh	0	:	5f17,139x34,0,0,37	:
+window	meratsu	1	:nvim	1	:*	dc81,139x34,0,0{69x34,0,0,38,69x34,70,0,39}	:
+window	meratsu	2	:zsh	0	:-	df10,139x34,0,0,40	:
+window	meratsu	3	:zsh	0	:	df11,139x34,0,0,41	:
+window	meratsu/api	0	:zsh	1	:*	df12,139x34,0,0,42	:
+window	meratsu/meratsu	0	:zsh	1	:*	df13,139x34,0,0,43	:
+window	open	0	:zsh	1	:*	df14,139x34,0,0,44	:
+window	pollos	0	:nvim	0	:-	a97b,139x34,0,0{73x34,0,0,45,65x34,74,0,46}	:
+window	pollos	1	:zsh	1	:*	df17,139x34,0,0,47	:
+state	crust	map_gen

@@ -1,0 +1,25 @@
+#User Preferences
+#Sun Nov 23 01:15:24 CET 2025
+G_FILE_CHOOSER.HEIGHT.Open\ a\ Ghidra\ Project=600
+G_FILE_CHOOSER.HEIGHT.Select\ File\ to\ Import=600
+G_FILE_CHOOSER.HEIGHT.Select\ a\ Ghidra\ Project\ Directory=600
+G_FILE_CHOOSER.VIEW_STYLE.Open\ a\ Ghidra\ Project=SimpleView
+G_FILE_CHOOSER.VIEW_STYLE.Select\ File\ to\ Import=SimpleView
+G_FILE_CHOOSER.VIEW_STYLE.Select\ a\ Ghidra\ Project\ Directory=SimpleView
+G_FILE_CHOOSER.WIDTH.Open\ a\ Ghidra\ Project=800
+G_FILE_CHOOSER.WIDTH.Select\ File\ to\ Import=800
+G_FILE_CHOOSER.WIDTH.Select\ a\ Ghidra\ Project\ Directory=800
+GhidraShowWhatsNew=false
+LAST_USED_OPTIONS_CONFIG=Standard Defaults
+LastImportFile=/home/pollen/Downloads/Compiled-1688545393558.Compiled
+LastOpenedProject=/home/pollen/projects/tryhackme/Compiled2
+ProjectDirectory=/home/pollen/projects/tryhackme/
+RECENT_0=/home/pollen/Downloads
+RECENT_1=/home/pollen/projects/tryhackme/Compiled
+RecentProjects=/home/pollen/projects/tryhackme/Compiled2;/home/pollen/projects/tryhackme/Compiled/Compiled
+SHOW.HELP.NAVIGATION.AID=true
+SHOW_TIPS=true
+TIP_INDEX=2
+Theme=Class\:generic.theme.builtin.FlatDarkTheme
+USER_AGREEMENT=ACCEPT
+ViewedProjects=

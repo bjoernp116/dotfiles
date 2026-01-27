@@ -1,0 +1,205 @@
+2025-11-23 01:06:59 INFO  (LoggingInitialization) Using log config file: jar:file:/opt/ghidra/Ghidra/Framework/Generic/lib/Generic.jar!/generic.log4j.xml  
+2025-11-23 01:06:59 INFO  (LoggingInitialization) Using log file: /home/pollen/.config/ghidra/ghidra_11.4.2_DEV/application.log  
+2025-11-23 01:06:59 INFO  (Preferences) Loading user preferences: /home/pollen/.config/ghidra/ghidra_11.4.2_DEV/preferences  
+2025-11-23 01:07:03 INFO  (ClassSearcher) Searching for classes...  
+2025-11-23 01:07:04 INFO  (ClassSearcher) Class search complete (1092 ms)  
+2025-11-23 01:07:04 INFO  (SSLContextInitializer) Initializing SSL Context  
+2025-11-23 01:07:04 INFO  (SecureRandomFactory) Initializing Random Number Generator...  
+2025-11-23 01:07:04 INFO  (SecureRandomFactory) Random Number Generator initialization complete: NativePRNGNonBlocking  
+2025-11-23 01:07:04 INFO  (ApplicationTrustManagerFactory) Trust manager disabled, cacerts have not been set  
+2025-11-23 01:07:04 INFO  (GhidraRun) User pollen started Ghidra.  
+2025-11-23 01:07:04 INFO  (GhidraRun) User settings directory: /home/pollen/.config/ghidra/ghidra_11.4.2_DEV  
+2025-11-23 01:07:04 INFO  (GhidraRun) User temp directory: /tmp/pollen-ghidra  
+2025-11-23 01:07:04 INFO  (GhidraRun) User cache directory: /var/tmp/pollen-ghidra  
+2025-11-23 01:07:04 DEBUG (DefaultProjectManager) No tools found; Installing default tools  
+2025-11-23 01:07:04 DEBUG (DefaultProjectManager) 	no recent project directories found  
+2025-11-23 01:07:05 DEBUG (RecoverySnapshotMgrPlugin) Recovery snapshot timer set to 5 minute(s)  
+2025-11-23 01:07:05 INFO  (GhidraRun) Ghidra startup complete (6582 ms)  
+2025-11-23 01:08:07 INFO  (DefaultProject) Creating project: /home/pollen/projects/tryhackme/Compiled/Compiled  
+2025-11-23 01:09:27 INFO  (FileActionManager) Closed project: Compiled  
+2025-11-23 01:09:27 INFO  (DefaultProject) Opening project: /home/pollen/projects/tryhackme/Compiled/Compiled  
+2025-11-23 01:09:27 INFO  (FileActionManager) Opened project: Compiled  
+2025-11-23 01:10:40 ERROR (DefaultProject) Error: Error saving project java.io.FileNotFoundException: /home/pollen/projects/tryhackme/Compiled/Compiled.rep/projectState (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at ghidra.framework.project.DefaultProject.save(DefaultProject.java:563)
+	at ghidra.framework.main.FileActionManager.doSaveProject(FileActionManager.java:425)
+	at ghidra.framework.main.FileActionManager.closeProject(FileActionManager.java:392)
+	at ghidra.framework.main.FileActionManager.newProject(FileActionManager.java:159)
+	at ghidra.framework.main.FileActionManager.lambda$createActions$0(FileActionManager.java:79)
+	at docking.action.builder.ActionBuilder$1.actionPerformed(ActionBuilder.java:48)
+	at docking.DockingActionProxy.actionPerformed(DockingActionProxy.java:47)
+	at docking.DockingActionPerformer.lambda$perform$0(DockingActionPerformer.java:73)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+ 
+2025-11-23 01:10:46 ERROR (IndexedV1LocalFileSystem) Failed to flush index file java.io.FileNotFoundException: /home/pollen/projects/tryhackme/Compiled/Compiled.rep/versioned/~index.tmp (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at java.base/java.io.PrintWriter.<init>(PrintWriter.java:224)
+	at java.base/java.io.PrintWriter.<init>(PrintWriter.java:364)
+	at ghidra.framework.store.local.IndexedLocalFileSystem.writeIndex(IndexedLocalFileSystem.java:295)
+	at ghidra.framework.store.local.IndexedLocalFileSystem.flushIndex(IndexedLocalFileSystem.java:268)
+	at ghidra.framework.store.local.IndexedLocalFileSystem.dispose(IndexedLocalFileSystem.java:197)
+	at ghidra.framework.data.DefaultProjectData.dispose(DefaultProjectData.java:1343)
+	at ghidra.framework.data.DefaultProjectData.close(DefaultProjectData.java:1280)
+	at ghidra.framework.project.DefaultProject.close(DefaultProject.java:398)
+	at ghidra.framework.main.FileActionManager.closeProject(FileActionManager.java:397)
+	at ghidra.framework.main.FileActionManager.newProject(FileActionManager.java:159)
+	at ghidra.framework.main.FileActionManager.lambda$createActions$0(FileActionManager.java:79)
+	at docking.action.builder.ActionBuilder$1.actionPerformed(ActionBuilder.java:48)
+	at docking.DockingActionProxy.actionPerformed(DockingActionProxy.java:47)
+	at docking.DockingActionPerformer.lambda$perform$0(DockingActionPerformer.java:73)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+ 
+2025-11-23 01:10:46 ERROR (IndexedV1LocalFileSystem) Failed to flush index file java.io.FileNotFoundException: /home/pollen/projects/tryhackme/Compiled/Compiled.rep/idata/~index.tmp (No such file or directory)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:289)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:230)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:179)
+	at java.base/java.io.PrintWriter.<init>(PrintWriter.java:224)
+	at java.base/java.io.PrintWriter.<init>(PrintWriter.java:364)
+	at ghidra.framework.store.local.IndexedLocalFileSystem.writeIndex(IndexedLocalFileSystem.java:295)
+	at ghidra.framework.store.local.IndexedLocalFileSystem.flushIndex(IndexedLocalFileSystem.java:268)
+	at ghidra.framework.store.local.IndexedLocalFileSystem.dispose(IndexedLocalFileSystem.java:197)
+	at ghidra.framework.data.DefaultProjectData.dispose(DefaultProjectData.java:1345)
+	at ghidra.framework.data.DefaultProjectData.close(DefaultProjectData.java:1280)
+	at ghidra.framework.project.DefaultProject.close(DefaultProject.java:398)
+	at ghidra.framework.main.FileActionManager.closeProject(FileActionManager.java:397)
+	at ghidra.framework.main.FileActionManager.newProject(FileActionManager.java:159)
+	at ghidra.framework.main.FileActionManager.lambda$createActions$0(FileActionManager.java:79)
+	at docking.action.builder.ActionBuilder$1.actionPerformed(ActionBuilder.java:48)
+	at docking.DockingActionProxy.actionPerformed(DockingActionProxy.java:47)
+	at docking.DockingActionPerformer.lambda$perform$0(DockingActionPerformer.java:73)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:318)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(EventQueue.java:773)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:720)
+	at java.desktop/java.awt.EventQueue$4.run(EventQueue.java:714)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:400)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:87)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(EventQueue.java:742)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:203)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:124)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:113)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:109)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.desktop/java.awt.EventDispatchThread.run(EventDispatchThread.java:90)
+ 
+2025-11-23 01:10:46 INFO  (FileActionManager) Closed project: Compiled  
+2025-11-23 01:10:46 INFO  (DefaultProject) Creating project: /home/pollen/projects/tryhackme/Compiled2  
+2025-11-23 01:10:52 INFO  (FileCacheMaintenanceDaemon) Starting cache cleanup: /var/tmp/pollen-ghidra/fscache2  
+2025-11-23 01:10:52 INFO  (FileCacheMaintenanceDaemon) Finished cache cleanup, estimated storage used: 0  
+2025-11-23 01:11:33 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-11-23 01:11:33 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2025-11-23 01:11:33 DEBUG (ElfHeader) Elf relocation table section .rela.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-11-23 01:11:33 DEBUG (ElfHeader) Elf relocation table section .rela.plt linked to symbol table section .dynsym affecting .got.plt  
+2025-11-23 01:11:43 DEBUG (ElfHeader) Elf symbol table section .dynsym linked to string table section .dynstr  
+2025-11-23 01:11:43 DEBUG (ElfHeader) Elf symbol table section .symtab linked to string table section .strtab  
+2025-11-23 01:11:43 DEBUG (ElfHeader) Elf relocation table section .rela.dyn linked to symbol table section .dynsym affecting PT_LOAD  
+2025-11-23 01:11:43 DEBUG (ElfHeader) Elf relocation table section .rela.plt linked to symbol table section .dynsym affecting .got.plt  
+2025-11-23 01:11:43 DEBUG (ElfProgramBuilder) Discarding 3-byte alignment/filler segment_4.2 at 00102045  
+2025-11-23 01:11:43 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_4.4 at 00102074  
+2025-11-23 01:11:43 DEBUG (ElfProgramBuilder) Discarding 9-byte alignment/filler segment_3.2 at 00101017  
+2025-11-23 01:11:43 DEBUG (ElfProgramBuilder) Discarding 8-byte alignment/filler segment_3.5 at 00101078  
+2025-11-23 01:11:43 DEBUG (ElfProgramBuilder) Discarding 2-byte alignment/filler segment_3.7 at 00101266  
+2025-11-23 01:11:43 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_2.3 at 00100334  
+2025-11-23 01:11:43 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_2.7 at 0010039c  
+2025-11-23 01:11:43 DEBUG (ElfProgramBuilder) Discarding 1-byte alignment/filler segment_2.11 at 0010058d  
+2025-11-23 01:11:43 DEBUG (ElfProgramBuilder) Discarding 4-byte alignment/filler segment_2.13 at 001005a4  
+2025-11-23 01:11:44 INFO  (ImporterUtilities) Additional info:
+Loading file:///home/pollen/Downloads/Compiled-1688545393558.Compiled?MD5=75b6d056ebcc801ba1ea9eb71e79c3d3...
+ELF Relocation Failure: R_X86_64_COPY (5, 0x5) at 00104030 (Symbol = stdout) - Runtime copy not supported (8-bytes)
+Setting block .init_array to read-only
+Setting block .fini_array to read-only
+Setting block .dynamic to read-only
+------------------------------------------------
+
+Linking the External Programs of 'Compiled-1688545393558.Compiled' to imported libraries...
+  [libc.so.6] -> not found in project
+------------------------------------------------
+
+Resolving External Symbols of [/Compiled-1688545393558.Compiled] - 6 unresolved symbols, no external libraries configured - skipping
+  
+2025-11-23 01:12:10 WARN  (DebuggerModulesPlugin) Plugin DebuggerModulesPlugin did not register a service handler for: interface ghidra.app.services.DebuggerAutoMappingService  
+2025-11-23 01:15:23 DEBUG (ToolTaskManager) Background processing started...  
+2025-11-23 01:15:23 DEBUG (ToolTaskManager) Task Start: Auto Analysis  
+2025-11-23 01:15:24 INFO  (ExternalDebugFileSectionProvider) DWARF external debug information found: ExternalDebugInfo [filename=null, crc=0, hash=06dcfaf13fb76a4b556852c5fbf9725ac21054fd]  
+2025-11-23 01:15:24 INFO  (DWARFAnalyzer) Unable to find DWARF information, skipping DWARF analysis  
+2025-11-23 01:15:24 WARN  (DecompileCallback) Decompiling 001010b0, pcode error at 00105008: Unable to disassemble EXTERNAL block location: 00105008  
+2025-11-23 01:15:24 WARN  (DecompileCallback) Decompiling 001010e0, pcode error at 00105038: Unable to disassemble EXTERNAL block location: 00105038  
+2025-11-23 01:15:24 INFO  (PackedDatabaseCache) Packed database cache: /var/tmp/pollen-ghidra/packed-db-cache  
+2025-11-23 01:15:24 DEBUG (PackedDatabaseCache) Caching packed database: /opt/ghidra/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt  
+2025-11-23 01:15:24 DEBUG (PackedDatabase) Unpacking database /opt/ghidra/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt -> /var/tmp/pollen-ghidra/packed-db-cache/pdbEB42F176/db.1.gbf  
+2025-11-23 01:15:25 DEBUG (PackedDatabaseCache) Cache update completed: /opt/ghidra/Ghidra/Features/Base/data/typeinfo/generic/generic_clib_64.gdt  
+2025-11-23 01:15:25 INFO  (ApplyDataArchiveAnalyzer) Applied data type archive: generic_clib_64  
+2025-11-23 01:15:25 INFO  (ExternalSymbolResolverAnalyzer) Resolving External Symbols of [/Compiled-1688545393558.Compiled] - 9 unresolved symbols, no external libraries configured - skipping  
+2025-11-23 01:15:25 INFO  (AutoAnalysisManager) -----------------------------------------------------
+    ASCII Strings                              0.223 secs
+    Apply Data Archives                        0.172 secs
+    Call Convention ID                         0.233 secs
+    Call-Fixup Installer                       0.001 secs
+    Create Address Tables                      0.002 secs
+    Create Function                            0.006 secs
+    DWARF                                      0.008 secs
+    Data Reference                             0.003 secs
+    Decompiler Switch Analysis                 0.716 secs
+    Demangler GNU                              0.006 secs
+    Disassemble Entry Points                   0.035 secs
+    ELF Scalar Operand References              0.003 secs
+    Embedded Media                             0.003 secs
+    External Entry References                  0.000 secs
+    External Symbol Resolver                   0.001 secs
+    Function ID                                0.014 secs
+    Function Start Search                      0.019 secs
+    Function Start Search After Code           0.002 secs
+    Function Start Search After Data           0.001 secs
+    GCC Exception Handlers                     0.034 secs
+    Non-Returning Functions - Discovered       0.001 secs
+    Non-Returning Functions - Known            0.001 secs
+    Reference                                  0.009 secs
+    Shared Return Calls                        0.006 secs
+    Stack                                      0.013 secs
+    Subroutine References                      0.002 secs
+    Subroutine References - One Time           0.000 secs
+    x86 Constant Reference Analyzer            0.035 secs
+-----------------------------------------------------
+     Total Time   1 secs
+-----------------------------------------------------
+  
+2025-11-23 01:15:25 DEBUG (ToolTaskManager) Start: Auto Analysis  
+2025-11-23 01:15:25 DEBUG (ToolTaskManager) Completed: Auto Analysis (0.0 secs)  
+2025-11-23 01:15:25 DEBUG (ToolTaskManager) Task Completed: Auto Analysis (1.681 secs)  
+2025-11-23 01:15:25 DEBUG (ToolTaskManager) Background processing complete (1.682 secs)  
+2025-11-23 01:15:46 INFO  (RecoveryMgr) Sun Nov 23 01:15:46 CET 2025 Recovery snapshot created: /home/pollen/projects/tryhackme/Compiled2.rep/idata/00/~00000000.db/snapshotA.grf  
+2025-11-23 01:21:59 WARN  (DecompileCallback) Decompiling 00105018, pcode error at 00105018: Unable to disassemble EXTERNAL block location: 00105018  
+2025-11-23 01:25:46 INFO  (RecoveryMgr) Sun Nov 23 01:25:46 CET 2025 Recovery snapshot created: /home/pollen/projects/tryhackme/Compiled2.rep/idata/00/~00000000.db/snapshotB.grf  
+2025-11-23 01:54:36 WARN  (DecompileCallback) Decompiling 00105020, pcode error at 00105020: Unable to disassemble EXTERNAL block location: 00105020  
+2025-11-23 01:55:47 WARN  (DecompileCallback) Decompiling 00105010, pcode error at 00105010: Unable to disassemble EXTERNAL block location: 00105010  
+2025-11-23 02:09:44 WARN  (DecompileCallback) Decompiling 00105028, pcode error at 00105028: Unable to disassemble EXTERNAL block location: 00105028  

@@ -1,0 +1,40 @@
+{
+	"notifications": [
+		{
+			"guid": "3276c9cf-ee3d-44eb-b7d7-2e4d4bae3e25",
+			"timestamp": 1762102083123,
+			"read": false,
+			"displayState": "background",
+			"notification": {
+				"message": "Sign in to share images and collaborate with your team",
+				"icon": "disconnected",
+				"type": "action-result",
+				"operation": "user-log-in",
+				"actionText": "Sign in",
+				"action": {
+					"action": "open-login",
+					"params": {}
+				},
+				"title": "You are signed out"
+			}
+		},
+		{
+			"guid": "5bc144ff-7c29-4c4d-a137-733aa9827bfb",
+			"timestamp": 1762125169370,
+			"read": true,
+			"displayState": "background",
+			"notification": {
+				"message": "You must initialize pass before logging in to Docker Desktop",
+				"icon": "error",
+				"type": "action-result",
+				"operation": "user-log-in",
+				"title": "Unable to log in",
+				"actionText": "Learn how",
+				"action": {
+					"action": "open-credential-store-instructions",
+					"params": {}
+				}
+			}
+		}
+	]
+}

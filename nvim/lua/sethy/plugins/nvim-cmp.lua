@@ -4,6 +4,7 @@ return {
     dependencies = {
         "hrsh7th/cmp-buffer", -- source for text in buffer
         "hrsh7th/cmp-path", -- source for file system paths
+        "mlaursen/vim-react-snippets",
         {
             "L3MON4D3/LuaSnip",
             -- follow latest release.
@@ -61,6 +62,9 @@ return {
             return col
         end
 
+        --require("vim-react-snippets").lazy_load()
+        local config = require("vim-react-snippets.config")
+        config.readonly_props = false;
 
         -- luasnip custom function
         local in_snippet = function()

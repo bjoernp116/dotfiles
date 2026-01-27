@@ -1,0 +1,8 @@
+2025/11/02-17:47:42.779 e0e8 Creating DB /home/pollen/.config/Docker Desktop/Local Storage/leveldb since it was missing.
+2025/11/02-17:47:42.789 e0e8 Reusing MANIFEST /home/pollen/.config/Docker Desktop/Local Storage/leveldb/MANIFEST-000001
+2025/11/03-01:25:57.881 e0e9 Level-0 table #5: started
+2025/11/03-01:25:57.903 e0e9 Level-0 table #5: 14708 bytes OK
+2025/11/03-01:25:57.932 e0e9 Delete type=0 #3
+2025/11/03-02:12:18.467 e0e9 Level-0 table #7: started
+2025/11/03-02:12:18.471 e0e9 Level-0 table #7: 14125 bytes OK
+2025/11/03-02:12:18.474 e0e9 Delete type=0 #4
